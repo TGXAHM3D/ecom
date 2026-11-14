@@ -1,3 +1,171 @@
+/* ---------- Base ---------- */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f6f8;
+    color: #333;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+    line-height: 1.5;
+}
+
+h1, h2 {
+    color: #1f2d3d;
+}
+
+h1 {
+    margin-bottom: 5px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #d9dee3;
+    margin: 15px 0 25px;
+}
+
+/* ---------- Links ---------- */
+a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ---------- Forms ---------- */
+form {
+    background: #ffffff;
+    padding: 20px;
+    border: 1px solid #d9dee3;
+    border-radius: 8px;
+    max-width: 420px;
+}
+
+form p {
+    margin: 0 0 15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 9px 10px;
+    margin-top: 5px;
+    border: 1px solid #c5ccd3;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: inherit;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.15);
+}
+
+/* ---------- Buttons ---------- */
+button {
+    background: #2563eb;
+    color: #ffffff;
+    border: none;
+    padding: 9px 18px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+/* ---------- Messages (red = error, green = success) ---------- */
+p[style*="color:red"],
+p[style*="color:green"] {
+    padding: 10px 14px;
+    border-radius: 5px;
+    max-width: 420px;
+}
+
+p[style*="color:red"] {
+    background: #fdecea;
+    border: 1px solid #f5c2c0;
+}
+
+p[style*="color:green"] {
+    background: #e8f6ec;
+    border: 1px solid #b9e2c4;
+}
+
+/* ---------- Tables ---------- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #d9dee3;
+    padding: 10px 12px;
+    text-align: left;
+}
+
+th {
+    background: #1f2d3d;
+    color: #ffffff;
+}
+
+tr:nth-child(even) td {
+    background: #f9fafb;
+}
+
+tr:hover td {
+    background: #eef3ff;
+}
+
+/* ---------- Edit / Delete buttons inside the table ---------- */
+td form {
+    display: inline;
+    background: none;
+    border: none;
+    padding: 0;
+    max-width: none;
+}
+
+td a[href^="edit.php"] {
+    display: inline-block;
+    background: #16a34a;
+    color: #ffffff;
+    padding: 7px 14px;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+td a[href^="edit.php"]:hover {
+    background: #15803d;
+    text-decoration: none;
+}
+
+td form button {
+    background: #dc2626;
+    padding: 7px 14px;
+}
+
+td form button:hover {
+    background: #b91c1c;
+}
+
 /* ---------- Images ---------- */
 input[type="file"] {
     width: 100%;

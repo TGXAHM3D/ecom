@@ -5,16 +5,14 @@ if (session_status() === PHP_SESSION_NONE) {
 
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 
-$conn = new mysqli("localhost", "root", "", "commerce");   // use YOUR database name
+$conn = new mysqli("localhost", "root", "", "commerce");   
 $conn->set_charset("utf8mb4");
 
 function e($value) {
     return htmlspecialchars((string)$value, ENT_QUOTES, 'UTF-8');
 }
 
-/*
- * Returns: null = no file chosen, false = error (message in $error), string = saved file name
- */
+
 function upload_image($file, $prefix, &$error) {
     if (!isset($file) || $file['error'] === UPLOAD_ERR_NO_FILE) {
         return null;

@@ -60,7 +60,7 @@ $result = $conn->query(
                     <td>
                         <?= ((int)$row['quantity'] > 0) ? (int)$row['quantity'] : 'Out of stock' ?>
                     </td>
-                    <td><?= e(number_format((float)$row['price'], 2)) ?></td>
+                    <td><?= e(number_format((float)$row['price'], 2)) ?> PKR</td>
                 </tr>
             <?php endwhile; ?>
         </table>
